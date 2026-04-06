@@ -70,6 +70,18 @@ La alternativa más directa es youtube-dl, que fue el proyecto original. Su vent
 <img width="1150" height="60" alt="image" src="https://github.com/user-attachments/assets/274b059d-24aa-45fc-9faf-50ac6ccf15b1" />
 <img width="1141" height="178" alt="image" src="https://github.com/user-attachments/assets/d504fdcd-484c-4598-b1e6-adda229708f7" />
 <img width="1155" height="604" alt="image" src="https://github.com/user-attachments/assets/22b7f4ab-c8df-44b8-a15c-08231c6de1eb" />
+<img width="1157" height="773" alt="image" src="https://github.com/user-attachments/assets/09e66429-194d-4fa1-a739-7c3233050897" />
+<img width="892" height="256" alt="image" src="https://github.com/user-attachments/assets/d82cc684-d86e-420a-a0c9-89f9aa3657bd" />
+<img width="1156" height="513" alt="image" src="https://github.com/user-attachments/assets/f9361fb3-e4e8-4881-b242-ad8e8eb76a86" />
+<img width="840" height="150" alt="image" src="https://github.com/user-attachments/assets/797a8366-e677-4764-bc2e-4d69efc19f4d" />
+<img width="1156" height="738" alt="image" src="https://github.com/user-attachments/assets/2d1f72ca-eabc-41f2-907f-4943f2b8f19f" />
+<img width="851" height="161" alt="image" src="https://github.com/user-attachments/assets/916a1bc4-cf1d-4e65-9bff-b13b0693e538" />
+<img width="1153" height="723" alt="image" src="https://github.com/user-attachments/assets/ff34e439-3d30-4c8f-b255-9504f7f84026" />
+<img width="850" height="179" alt="image" src="https://github.com/user-attachments/assets/11505e39-ac31-4e35-9e2c-b73f65999cb7" />
+<img width="1159" height="703" alt="image" src="https://github.com/user-attachments/assets/ba10ba20-9de5-4003-b3bb-cd73b0a994be" />
+<img width="843" height="192" alt="image" src="https://github.com/user-attachments/assets/f16c3d56-0851-4280-bd38-b3d8f82d306d" />
+<img width="1152" height="498" alt="image" src="https://github.com/user-attachments/assets/4d95fb4a-e029-4385-8156-6b7289bf8ece" />
+
 
 
 
