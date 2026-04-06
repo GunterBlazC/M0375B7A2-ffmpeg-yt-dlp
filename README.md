@@ -64,55 +64,67 @@ Alternativas a yt-dlp
 La alternativa más directa es youtube-dl, que fue el proyecto original. Su ventaja es que fue muy popular, pero yt-dlp suele estar más actualizado y mejor mantenido. También existen programas con interfaz gráfica basados en estas herramientas, que son más cómodos para empezar, aunque normalmente dan menos control que usar yt-dlp en terminal.
 
 ## Parte practica 
-Primero instalé FFmpeg en Ubuntu con el gestor de paquetes. Una vez terminó la instalación, comprobé que funcionaba bien usando el comando de ayuda. Con eso confirmé que la herramienta ya estaba lista para usarse y que no había errores en la instalación.
+
+Primero instalé **FFmpeg** en Ubuntu con el gestor de paquetes. Cuando terminó la instalación, comprobé que la herramienta ya estaba disponible y lista para usarse en la terminal.
 
 <img width="517" height="27" alt="image" src="https://github.com/user-attachments/assets/c49ef8f7-7c70-4dd3-9820-1c0840d55de7" />
 
-Después probé a sacar la información de un vídeo con ffmpeg -i. Al principio tuve un pequeño fallo porque no estaba usando bien el nombre o la ruta del archivo, pero una vez localizado el vídeo pude ver sin problema sus datos principales, como la duración, la resolución, el bitrate y los códecs que llevaba. Esa parte me sirvió para entender mejor con qué archivo estaba trabajando antes de empezar a modificarlo.
+Después intenté consultar la información de un vídeo con `ffmpeg -i`, pero al principio tuve un pequeño fallo porque no estaba usando bien el nombre o la ruta del archivo. Esta prueba me sirvió para darme cuenta de que antes de trabajar con FFmpeg tenía que asegurarme bien de dónde estaba guardado el vídeo.
+
 <img width="728" height="409" alt="image" src="https://github.com/user-attachments/assets/95c73861-82b2-424c-b829-aa5e9c820a4d" />
 
-Luego pasé a instalar yt-dlp, descargándolo desde GitHub y dándole permisos de ejecución para poder usarlo desde la terminal. Cuando estuvo instalado, comprobé que respondía correctamente y seguí con la parte de la descarga de contenido.
+Luego instalé **yt-dlp** descargándolo desde GitHub y dándole permisos de ejecución para poder usarlo desde cualquier carpeta del sistema.
+
 <img width="1150" height="60" alt="image" src="https://github.com/user-attachments/assets/274b059d-24aa-45fc-9faf-50ac6ccf15b1" />
 
-El siguiente paso fue consultar los formatos disponibles de un vídeo de YouTube. Así pude ver las distintas resoluciones, los formatos de audio y vídeo y los identificadores de cada opción. Esto me ayudó a elegir qué formato descargar y a entender mejor cómo organiza yt-dlp la información antes de bajar el archivo.
+Una vez instalado, consulté los formatos disponibles de un vídeo de YouTube. Así pude ver las distintas resoluciones, los formatos de audio y vídeo y los identificadores de cada opción antes de descargar nada.
+
 <img width="1141" height="178" alt="image" src="https://github.com/user-attachments/assets/d504fdcd-484c-4598-b1e6-adda229708f7" />
 
-Después descargué uno de los formatos disponibles del vídeo y comprobé que el archivo se había guardado correctamente en la carpeta. Ese mismo vídeo descargado fue el que utilicé luego en la parte de FFmpeg, así que me vino bien trabajar con un solo archivo para toda la práctica.
+Después descargué uno de los formatos disponibles del vídeo y comprobé que el archivo se había bajado correctamente. Este mismo vídeo fue el que utilicé luego para hacer toda la parte práctica con FFmpeg.
+
 <img width="1155" height="604" alt="image" src="https://github.com/user-attachments/assets/22b7f4ab-c8df-44b8-a15c-08231c6de1eb" />
 
-Con el vídeo ya guardado en el sistema, volví a usar ffmpeg -i para consultar su información técnica. Ahí ya pude ver claramente la duración del archivo, el códec de vídeo, el códec de audio, la resolución y otros datos básicos del archivo descargado.
+Con el vídeo ya guardado en el sistema, volví a usar `ffmpeg -i` para consultar su información técnica. Ahí ya pude ver la duración, el bitrate, la resolución y los códecs del archivo descargado.
+
 <img width="1157" height="773" alt="image" src="https://github.com/user-attachments/assets/09e66429-194d-4fa1-a739-7c3233050897" />
 
-A partir de ahí empecé las conversiones. Primero transformé el vídeo original a formato MKV con H.264, y después repetí el mismo proceso usando H.265. La idea era comparar ambos resultados y ver la diferencia entre los dos códecs. Al revisar los tamaños finales, pude comprobar que el archivo generado con H.265 ocupaba menos espacio, mientras que el de H.264 quedaba más pesado. Esto encaja bastante con la teoría, porque H.265 comprime más, aunque H.264 sigue siendo más compatible.
+A partir de ahí empecé con las conversiones. Primero pasé el vídeo original a formato **MKV con H.264** y luego repetí el mismo proceso usando **H.265**. Después comparé los tamaños para ver la diferencia entre los dos resultados.
+
 <img width="892" height="256" alt="image" src="https://github.com/user-attachments/assets/d82cc684-d86e-420a-a0c9-89f9aa3657bd" />
 
-Después hice otra prueba cambiando solo el audio del archivo. Para eso mantuve el vídeo sin modificar usando copy y fui probando distintos códecs de audio como MP3, AAC y Vorbis. Al comparar los resultados, vi que los tamaños cambiaban un poco según el códec utilizado, aunque la parte de vídeo seguía siendo la misma. Esta prueba me ayudó a ver que no siempre hace falta tocar todo el archivo, y que también se puede modificar solo una parte concreta.
+Después hice una prueba cambiando solo el **audio** del archivo. Para eso mantuve el vídeo sin modificar y fui probando distintos códecs, empezando por **MP3**.
+
 <img width="1156" height="513" alt="image" src="https://github.com/user-attachments/assets/f9361fb3-e4e8-4881-b242-ad8e8eb76a86" />
 
+Luego comprobé el resultado generado con ese cambio de audio para ver que el archivo nuevo se había creado correctamente.
+
 <img width="840" height="150" alt="image" src="https://github.com/user-attachments/assets/797a8366-e677-4764-bc2e-4d69efc19f4d" />
+
+Después repetí la misma idea usando **AAC**, manteniendo igual la parte de vídeo y cambiando solamente la pista de audio.
+
 <img width="1156" height="738" alt="image" src="https://github.com/user-attachments/assets/2d1f72ca-eabc-41f2-907f-4943f2b8f19f" />
+
+Volví a revisar los archivos generados para comprobar que también se había creado correctamente esta versión.
+
 <img width="851" height="161" alt="image" src="https://github.com/user-attachments/assets/916a1bc4-cf1d-4e65-9bff-b13b0693e538" />
+
+La última prueba de esta parte fue cambiar el audio a **Vorbis**, otra vez sin tocar el vídeo. Así pude comparar varios códecs de audio usando el mismo archivo de partida.
+
 <img width="1153" height="723" alt="image" src="https://github.com/user-attachments/assets/ff34e439-3d30-4c8f-b255-9504f7f84026" />
+
+Después comparé de nuevo los resultados para ver cómo habían quedado los distintos archivos y qué diferencias había en el tamaño final según el audio usado.
+
 <img width="850" height="179" alt="image" src="https://github.com/user-attachments/assets/11505e39-ac31-4e35-9e2c-b73f65999cb7" />
+
+Más adelante hice una prueba modificando manualmente el **bitrate** del vídeo y del audio. En este caso el cambio fue muy visible, porque el archivo final pasó a ocupar bastante más que el original.
+
 <img width="1159" height="703" alt="image" src="https://github.com/user-attachments/assets/ba10ba20-9de5-4003-b3bb-cd73b0a994be" />
+
+Por último, extraje solo el **audio** del vídeo y también recorté un fragmento corto para generar un clip independiente. Con estas dos pruebas cerré la práctica usando funciones básicas pero muy útiles de FFmpeg.
+
 <img width="843" height="192" alt="image" src="https://github.com/user-attachments/assets/f16c3d56-0851-4280-bd38-b3d8f82d306d" />
+
+En el resultado final ya se pueden ver juntos todos los archivos que fui generando durante la práctica: las conversiones con H.264 y H.265, las versiones con distintos audios, el archivo con bitrate modificado, el audio extraído y el clip recortado.
+
 <img width="1152" height="498" alt="image" src="https://github.com/user-attachments/assets/4d95fb4a-e029-4385-8156-6b7289bf8ece" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
