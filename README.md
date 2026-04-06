@@ -1,5 +1,5 @@
 # M0375B7A2-ffmpeg-yt-dlp
-## Parte escrita
+## Parte teorica
 ### 1. Protocolos: RTMP, HLS, RTSP y SRT
 
 RTMP es un protocolo usado sobre todo para enviar vídeo y audio en directo desde un programa de emisión hacia un servidor. Tiene baja latencia, pero hoy se usa menos para la reproducción final en navegador. 
@@ -62,3 +62,29 @@ Una alternativa bastante conocida es HandBrake. Su ventaja es que tiene interfaz
 
 Alternativas a yt-dlp
 La alternativa más directa es youtube-dl, que fue el proyecto original. Su ventaja es que fue muy popular, pero yt-dlp suele estar más actualizado y mejor mantenido. También existen programas con interfaz gráfica basados en estas herramientas, que son más cómodos para empezar, aunque normalmente dan menos control que usar yt-dlp en terminal.
+
+## Parte practica 
+
+<img width="517" height="27" alt="image" src="https://github.com/user-attachments/assets/c49ef8f7-7c70-4dd3-9820-1c0840d55de7" />
+<img width="728" height="409" alt="image" src="https://github.com/user-attachments/assets/95c73861-82b2-424c-b829-aa5e9c820a4d" />
+<img width="1150" height="60" alt="image" src="https://github.com/user-attachments/assets/274b059d-24aa-45fc-9faf-50ac6ccf15b1" />
+<img width="1141" height="178" alt="image" src="https://github.com/user-attachments/assets/d504fdcd-484c-4598-b1e6-adda229708f7" />
+<img width="1155" height="604" alt="image" src="https://github.com/user-attachments/assets/22b7f4ab-c8df-44b8-a15c-08231c6de1eb" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
