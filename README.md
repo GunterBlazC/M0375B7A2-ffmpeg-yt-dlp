@@ -128,3 +128,21 @@ Por último, extraje solo el **audio** del vídeo y también recorté un fragmen
 En el resultado final ya se pueden ver juntos todos los archivos que fui generando durante la práctica: las conversiones con H.264 y H.265, las versiones con distintos audios, el archivo con bitrate modificado, el audio extraído y el clip recortado.
 
 <img width="1152" height="498" alt="image" src="https://github.com/user-attachments/assets/4d95fb4a-e029-4385-8156-6b7289bf8ece" />
+
+### Errores y soluciones
+
+Durante la práctica me encontré con varios problemas pequeños. El primero fue al intentar usar ffmpeg -i, porque al principio no estaba escribiendo bien el nombre o la ruta del archivo. La solución fue revisar en qué carpeta estaba guardado el vídeo y volver a ejecutar el comando con el nombre correcto.
+
+Otro problema apareció al usar yt-dlp con algunos enlaces, ya que uno de los vídeos no estaba disponible o no se podía procesar bien. Para solucionarlo, cambié a otro vídeo público que sí permitía listar formatos y descargarlo sin problemas.
+
+También me pasó que al principio pensé que con yt-dlp -F ya estaba descargando el vídeo, pero en realidad ese comando solo muestra los formatos disponibles. La solución fue usar después yt-dlp -f ID URL, que es el que realmente descarga el archivo.
+
+Por último, en la parte de conversiones vi que algunos archivos finales ocupaban más o menos de lo que esperaba. Esto me ayudó a entender mejor que cambiar el códec o el bitrate puede afectar bastante al tamaño del archivo resultante.
+
+### Conclusión
+
+Con esta práctica he aprendido a instalar y usar dos herramientas muy útiles para trabajar con contenido multimedia en Linux. Primero utilicé yt-dlp para consultar formatos y descargar un vídeo desde Internet, y después trabajé con ese mismo archivo en FFmpeg.
+
+A lo largo de las pruebas pude ver cómo obtener información técnica de un vídeo, cambiar de formato, probar distintos códecs, modificar el audio, ajustar el bitrate, extraer solo el sonido y recortar un fragmento. Lo que más me ha ayudado ha sido comprobar los cambios directamente en los archivos generados, porque así he entendido mejor qué hace cada comando.
+
+En general, la práctica me ha servido para familiarizarme con herramientas reales que se usan mucho en tareas de vídeo y audio, y también para darme cuenta de que pequeños detalles como la ruta del archivo, el formato elegido o el bitrate pueden cambiar bastante el resultado final.
